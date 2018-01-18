@@ -44,10 +44,10 @@
   // add realtime listener
   firebase.auth().onAuthStateChanged(firebaseUser => {
     if (firebaseUser){
-      btnLogout.classList.remove('hide');
+      window.location.replace("home.html");
     }
     else {
-      btnLogout.classList.add('hide')
+
     }
   });
 
